@@ -21,7 +21,6 @@ function onFormSubmit(e) {
 
   if (email.value === '' && !warnRef) {
     emailInputWrapRef.insertAdjacentHTML('beforeend', warning);
-    return;
   }
 }
 
