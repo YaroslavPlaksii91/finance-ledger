@@ -1,0 +1,36 @@
+.footer {
+  .container {
+    padding: 20px 0;
+    background-color: var(--main-dark-color);
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__list-item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.footer__icon {
+  fill: var(--main-white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .footer__link:hover &,
+  .footer__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+}

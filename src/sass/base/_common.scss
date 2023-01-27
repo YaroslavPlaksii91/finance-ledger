@@ -1,0 +1,22 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--main-white-color);
+  background-color: var(--main-white-color);
+  overflow-x: hidden;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+
+a {
+  outline: none;
+}
