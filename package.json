@@ -1,22 +1,22 @@
 {
-  "name": "land-test",
+  "name": "finance-ledger",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://",
+  "homepage": "https://yaroslavplaksii91.github.io/finance-ledger",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url //"
+    "build": "parcel build src/*.html --public-url /finance-ledger/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oxica/project-filmoteka.git"
+    "url": "git+https://github.com/YaroslavPlaksii91/finance-ledger.git"
   },
   "keywords": [],
   "author": "Yaroslav Plaksii <plaksii.yaroslav@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/YaroslavPlaksii91/finance-ledger/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
