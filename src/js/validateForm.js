@@ -11,7 +11,7 @@ const warning = `<span class="warning"
 form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   const {
     elements: { email },
