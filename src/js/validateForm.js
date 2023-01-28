@@ -17,6 +17,10 @@ function onFormSubmit(e) {
 
   const warnRef = document.querySelector('.warning');
 
+  if (warnRef) {
+    e.preventDefault();
+  }
+
   if (email.value === '' && !warnRef) {
     e.preventDefault();
     emailInputWrapRef.insertAdjacentHTML('beforeend', warning);
