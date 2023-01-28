@@ -11,8 +11,6 @@ const warning = `<span class="warning"
 form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
-  // e.preventDefault();
-
   const {
     elements: { email },
   } = e.currentTarget;
@@ -20,6 +18,7 @@ function onFormSubmit(e) {
   const warnRef = document.querySelector('.warning');
 
   if (email.value === '' && !warnRef) {
+    e.preventDefault();
     emailInputWrapRef.insertAdjacentHTML('beforeend', warning);
   }
 }
