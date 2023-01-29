@@ -1,18 +1,18 @@
 const btnRef = document.querySelector('.backToTop');
 
-window.addEventListener('scroll', scrollFunction);
+window.addEventListener('scroll', onScroll);
 
-btnRef.addEventListener('click', topFunction);
+btnRef.addEventListener('click', onBtnClick);
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+function onScroll() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     btnRef.style.display = 'block';
   } else {
     btnRef.style.display = 'none';
   }
 }
 
-function topFunction() {
+function onBtnClick() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
